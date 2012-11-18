@@ -9,6 +9,7 @@ public class RulesTest {
 	public void testMultiply() {
 		Rules tester=new Rules();
 		assertEquals(10, tester.multiply(2, 5));
+		assertEquals(4, tester.multiply(2, 2));
 	}
 
 }
