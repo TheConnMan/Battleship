@@ -1,12 +1,6 @@
 
 public class Rules {
-	/**
-	 * Test function that multiplies two ints
-	 * @param a - First int
-	 * @param b - Second int
-	 * @return Product of the two ints
-	 * @author Brian
-	 */
+
 	/**
 	 * Test function that multiplies two ints
 	 * @param a - First int
