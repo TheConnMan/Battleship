@@ -35,5 +35,13 @@ public class PlayBattleship extends Board {
                 createAndShowGUI(); 
             }
         });
+        String firstMove = "C4";
+        String secondMove = "D4";
+        int length = 4;
+        //Ship ship = new Ship(firstMove, secondMove, length);
+        firstMove = "D4";
+        secondMove = "C4";
+        length = 3;
+        Ship ship1 = new Ship(firstMove, secondMove, length);
     }
 }

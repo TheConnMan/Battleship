@@ -30,6 +30,19 @@ public class Rules {
 		decomposedMove[1]=Integer.valueOf(move.substring(1))-1;
 		return decomposedMove;
 	}
+	
+	public String composeMove(int[] move) {
+		String result = "";
+		
+		String[] letters = {"A","B","C","D","E","F","G","H","I","J"};
+		for (int i = 0; i < letters.length; i++) {
+			if(i == move[0]) {
+				result = letters[i] + Integer.toString(move[1]+1);
+				break;
+			}
+		} 
+		return result;
+	}
 	/**
 	 * Checks if two squares are in line with each other when placing pieces on the board
 	 * @param move1 - First square
