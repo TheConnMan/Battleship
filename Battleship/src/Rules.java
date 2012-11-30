@@ -1,4 +1,3 @@
-
 public class Rules {
 
 	/**
@@ -51,7 +50,9 @@ public class Rules {
 	 */
 	public boolean inLine(int[] move1, int[] move2) {
 		boolean valid=false;
-		
+		if (move1[0]==move2[0]||move1[1]==move2[1]) {
+			valid=true;
+		}
 		return valid;
 	}
 	
@@ -81,7 +82,14 @@ public class Rules {
 	 * @param spacesBetween - Array of rows and columns between moves
 	 * @return True if all spaces are open, false otherwise
 	 */
-	public boolean positionsOpen(int[][] spacesBetween) {
-		return false;
+	public boolean positionsOpen(int[][] spacesBetween, int[][] board) {
+		boolean open=true;
+		for (int space=0; space<spacesBetween[0].length; space++) {
+			if (board[spacesBetween[space][0]][spacesBetween[space][1]]>1) {
+				open=false;
+				break;
+			}
+		}
+		return open;
 	}
 }
